@@ -1,4 +1,47 @@
-{% extends "home/base.html" %}
+{% extends "home/base.html" %} {% load static %}
 {% block content %}
-    <h1>Home!</h1>
+<div class="row gallery-div">
+    <div class="col-md-4">
+      <div class="thumbnail gallery-image">
+        <a href="">
+          <img src="{% static 'images/chimp.jpg' %}" alt="chimp" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail gallery-image">
+        <a href="">
+          <img src="{% static 'images/DMX.jpg' %}" alt="DMX" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail gallery-image">
+        <a href="">
+          <img src="{% static 'images/Gord.jpg' %}" alt="Gordon" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail gallery-image">
+        <a href="">
+          <img src="{% static 'images/chimp.jpg' %}" alt="chimp" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail gallery-image">
+        <a href="">
+          <img src="{% static 'images/DMX.jpg' %}" alt="DMX" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail gallery-image">
+        <a href="">
+          <img src="{% static 'images/Gord.jpg' %}" alt="Gordon" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
 {% endblock %}
