@@ -1,8 +1,12 @@
 from django.shortcuts import render
+from .models import Artwork
 
 
 def home(request):
-    return render(request, 'home/home.html')
+    context = {
+        'artwork': Artwork.objects.all()
+    }
+    return render(request, 'home/home.html', context)
 
 
 def about(request):

@@ -30,7 +30,7 @@
     </h1> 
     <ul class="nav justify-content-center navbar-settings">
         <li class="nav-item">
-          <a class="nav-link nav-link-1 active" href="#">GALLERY</a>
+          <a class="nav-link nav-link-1 active" href="{% url 'home-home' %}">GALLERY</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-link-2" href="#">NFT'S</a>
@@ -39,13 +39,15 @@
           <a class="nav-link nav-link-3" href="#">SHOP</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-4" href="#">CONTACT</a>
+          <a class="nav-link nav-link-4" href="{% url 'home-about' %}">CONTACT</a>
         </li>
       </ul>
     </div>
       <div class="container">
         {% block content %}{% endblock %}
       </div>
+      <div class="container"></div>
+      <div class="footer">
     <footer id="footer">
         <a href="https://www.instagram.com/nonfgod" target="_blank"><i class="fab fa-instagram social-links social-links-1"></i></a>
         <a href="https://www.twitter.com/nonfgod" target="_blank"><i class="fab fa-twitter-square social-links social-links-3"></i></a>
@@ -53,7 +55,8 @@
             © NONFGOD. All rights reserved. Website designed by
             <a target="_blank" class="theo-tag" href="https://github.com/TheoNorris">Theo Norris</a>
         </p>
-    </footer>
+      </footer>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
